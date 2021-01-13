@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.section-one {
+  padding-top: 1rem;
+  background-color: #fff;
+  transform: translateY(4rem);
+  border-bottom-left-radius: 2.8rem;
+  border-bottom-right-radius: 2.8rem;
+  .container {
+    .top {
+      padding-bottom: 3rem;
+      .nav-bar-area {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        .nav-bar-left {
+          display: flex;
+          align-items: center;
+          img {
+            width: 1.2rem;
+            margin-right: 0.5rem;
+          }
+          span {
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+        } //left
+        .nav-bar-right {
+          display: flex;
+          align-items: center;
+          .item-bell-wrapper {
+            position: relative;
+            margin-right: 3rem;
+            .fa-bell-o {
+              font-size: 2.4rem;
+            }
+            .fa-circle {
+              position: absolute;
+              top: 0;
+              right: 0;
+              color: crimson;
+            }
+          } //bell-wrapper
+          .item-ellipses-wrapper {
+            .fa-ellipsis-h {
+              font-size: 1.4rem;
+            }
+          } //ellipsis
+        } //nav-right
+      } //nav-area
+      .cta-wrapper {
+        padding: 8rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-size: 4.6rem;
+          font-weight: bolder;
+
+          sup {
+            font-weight: 100;
+          }
+        }
+        .cta-add-money {
+          margin-top: 4rem;
+          border: thin solid #66666659;
+          border-radius: 2.4rem;
+          width: 14rem;
+          height: 4rem;
+          a {
+            // background-color: green;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2.4rem;
+            font-size: 1.3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            i {
+              margin-right: 0.5rem;
+              padding: 0.5rem;
+              background-color: #dcee7d;
+              border-radius: 50%;
+              font-weight: 200 !important;
+              font-size: 0.8rem;
+            }
+            span {
+              font-weight: 600;
+            }
+          }
+        } //cta-add-money
+      } //cta wrapper
+      //bene
+      .beneficiaries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .profile-wrapper {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              border-radius: 50%;
+              width: 5rem;
+              height: 5rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+          }
+          .arrow {
+            width: 5rem;
+            height: 5rem;
+            background-color: #dcee7d;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        } //profile wrapper
+        .bar {
+          height: 0.2rem;
+          width: 4rem;
+          background-color: #66666659;
+          border-radius: 2.4rem;
+          margin-top: 3rem;
+        } //bar
+      } //beneficiaries
+    } //top
+  } //container
+} //section
+.section-two {
+  background-color: #f3f3f1;
+  padding: 8rem 0 4rem 0;
+  .container {
+    .current-price {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: rgba($color: #000000, $alpha: 0.5);
+    } //current price
+    .stock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        // align-items: center;
+        .img {
+          width: 4rem;
+          height: 4rem;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 1rem;
+          img {
+            width: 50%;
+          }
+        }
+        .stock-name-time {
+          h6 {
+            font-weight: 900;
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+      } //left
+      .right {
+        h6 {
+          font-size: 1.6rem;
+          font-weight: 900;
+        }
+      }
+    } //stock
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3rem;
+      i {
+        font-size: 3rem;
+      }
+    }
+  } //container
+}
