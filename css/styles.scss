@@ -7,15 +7,32 @@ body {
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 100vh;
+}
 .section-one {
   padding-top: 1rem;
   background-color: #fff;
   transform: translateY(4rem);
   border-bottom-left-radius: 2.8rem;
   border-bottom-right-radius: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
     .top {
       padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
       .nav-bar-area {
         display: flex;
         justify-content: space-between;
